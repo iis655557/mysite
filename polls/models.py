@@ -27,7 +27,7 @@ from datetime import  datetime,timedelta
 class Question(models.Model):
     question_text=models.CharField('问题内容',max_length=200)
     pub_date=models.DateTimeField('发布时间')
-    def __str__(self):     #（了解）控制打印对象时输出的信息Q
+    def __str__(self):     #（了解）控制打印对象时输出的信息Q；
         return self.question_text
 
     def was_published_recently(self):
