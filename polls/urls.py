@@ -12,9 +12,10 @@ urlpatterns=[
     #投票结果页 /polls/2/results/
     path('<int:question_id>/results/',views.results,name='results'),
     #去投票，选项计数加一   /polls/5/vote
-    path('<int:question_id>/vote/',views.vote,name='vote')
+    path('<int:question_id>/vote/',views.vote,name='vote'),
 
-
+    #通用视图函数
+    path('simple/',views.SimpleView.as_view(), name='simple'),
 ]
 
 #(注意)

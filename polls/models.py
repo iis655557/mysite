@@ -21,7 +21,7 @@ create table votes if not exists(
 #自定义的类要继承orm框架中的Model类，这样orm框架能把类和数据库联系起来。
 from django.db import models
 from django.utils import timezone
-from datetime import  datetime,timedelta
+from datetime import datetime,timedelta
 
 # Create your models here.
 class Question(models.Model):
